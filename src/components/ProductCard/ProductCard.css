@@ -71,9 +71,7 @@
 .discount-text {
   background-color: var(--color-accent);
   color: #fff;
-
-  height: 14px;
-  padding: 2px;
+  padding: 1px 6px;
 
   font-size: 14px;
   font-weight: 700;

@@ -84,7 +84,7 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(347px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
   row-gap: 60px;
   margin-bottom: 31px;

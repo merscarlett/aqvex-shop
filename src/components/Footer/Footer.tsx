@@ -28,26 +28,26 @@ export const Footer = () => {
             <img
               src="/images/mini-logo-3.png"
               alt="Logo 3"
-              width="77"
-              height="34"
+              width={77}
+              height={34}
             />
             <img
               src="/images/mini-logo-4.png"
               alt="Logo 4"
-              width="69"
-              height="34"
+              width={69}
+              height={34}
             />
             <img
               src="/images/mini-logo-5.png"
               alt="Logo 5"
-              width="62"
-              height="34"
+              width={62}
+              height={34}
             />
             <img
               src="/images/mini-logo-6.png"
               alt="Logo 6"
-              width="64"
-              height="34"
+              width={64}
+              height={34}
             />
           </div>
         </div>
