@@ -1,0 +1,72 @@
+.footer {
+    margin-top: 67px;
+    padding: 23px 0px;
+    border-top: 1.9px solid #F0F0F0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-left-logos {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-left-logos p {
+    margin-left: 10px;
+    font-family: 'Klein';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.44px;
+    color: #8090A4;
+}
+
+.footer-left-logos img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-right-logo .logo-wrapper {
+    position: relative;
+    width: 60px;
+    height: 40px;
+}
+
+.footer-right-logo .logo-background {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-right-logo .logo-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrapper {
+    position: relative;
+    width: 60px;
+    height: 40px;
+}
+
+.logo-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.logo-foreground {
+    position: absolute;
+    width: 69px;
+    height: 52px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.73, 0.72);
+    transform-origin: center center;
+}

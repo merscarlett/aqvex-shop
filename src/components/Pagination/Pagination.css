@@ -1,0 +1,47 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.pagination .page-number {
+    height: 46px;
+    width: 46px;
+    color: #182A42;
+    font-family: "klein";
+    font-weight: 700;
+    letter-spacing: -0.44px;
+}
+
+.pagination .page-number.active {
+    border: 1.5px solid #43A0FD;
+    border-radius: 15px;
+}
+
+.pagination .dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #182A42;
+}

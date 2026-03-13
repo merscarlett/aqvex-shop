@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/Klein-Medium.woff2') format('woff2'),
+    url('/fonts/Klein-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/Klein-Bold.woff2') format('woff2'),
+    url('/fonts/Klein-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Klein';
+  src: url('/fonts/Klein-Regular.woff2') format('woff2'),
+    url('/fonts/Klein-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Klein', sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
