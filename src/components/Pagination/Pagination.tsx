@@ -7,6 +7,10 @@ type PaginationProps = {
 };
 
 export const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
+  if (totalPages <= 1) {
+    return null;
+  }
+
   const handlePageChange = (p: number) => {
     onChange(p);
     window.scrollTo({
@@ -47,8 +51,9 @@ export const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
         className="arrow"
         onClick={() => handlePageChange(Math.max(page - 1, 1))}
         disabled={page === 1}
+        aria-label="Попередня сторінка"
       >
-        <img src="/icons/arrow-pagination-left.svg" alt="Previous" />
+        <img src="/icons/arrow-pagination-left.svg" alt="" />
       </button>
 
       {pages.map((p, i) => {
@@ -65,6 +70,7 @@ export const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
             key={p}
             className={`page-number ${page === p ? "active" : ""}`}
             onClick={() => handlePageChange(p)}
+            aria-label={`Сторінка ${p}`}
           >
             {p}
           </button>
@@ -75,8 +81,9 @@ export const Pagination = ({ page, totalPages, onChange }: PaginationProps) => {
         className="arrow"
         onClick={() => handlePageChange(Math.min(page + 1, totalPages))}
         disabled={page === totalPages}
+        aria-label="Наступна сторінка"
       >
-        <img src="/icons/arrow-pagination-right.svg" alt="Next" />
+        <img src="/icons/arrow-pagination-right.svg" alt="" />
       </button>
     </div>
   );

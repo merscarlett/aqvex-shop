@@ -22,13 +22,26 @@
   font-style: normal;
 }
 
+:root {
+  --font-main: "Klein";
+  --letter-main: -0.44px;
+
+  --color-dark: #182A42;
+  --color-gray: #8090A4;
+  --color-border: #EBEBEB;
+  --color-accent: #FF2741;
+  --color-blue: #43A0FD;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Klein', sans-serif;
+  font-family: var(--font-main), sans-serif;
+  background-color: #fff;
+  color: var(--color-dark);
 }
 
 .container {

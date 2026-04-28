@@ -29,21 +29,11 @@ export const ProductCard = ({ product }: Props) => {
         </span>
 
         {hasDiscount && (
-          <div className="discount-badge">
-            <div className="triangle-container">
-              <img src="/icons/triangle.svg" className="triangle" alt="" />
-            </div>
-
-            <span className="discount-text">{product.discount_percent}%</span>
-
-            <span className="discount-small" />
-          </div>
+          <span className="discount-badge">-{product.discount_percent}%</span>
         )}
       </div>
 
-      <div>
-        <h3 className="product-title">{product.name}</h3>
-      </div>
+      <h3 className="product-title">{product.name}</h3>
 
       <div className="stars-wrapper">
         <div className="stars">
@@ -74,10 +64,10 @@ export const ProductCard = ({ product }: Props) => {
         {product.in_stock ? (
           <span className="in-stock">
             <img src="/icons/checkMark.svg" className="check-icon" alt="" />В
-            наличии
+            наявності
           </span>
         ) : (
-          <span className="out-stock">Нет в наличии</span>
+          <span className="out-stock">Немає в наявності</span>
         )}
 
         <span className="category">
@@ -98,14 +88,14 @@ export const ProductCard = ({ product }: Props) => {
             </select>
 
             <button className="cart-btn">
-              <img src="/icons/cart.svg" alt="cart" className="cart-icon" />В
-              корзину
+              <img src="/icons/cart.svg" alt="" className="cart-icon" />
+              <span>До кошика</span>
             </button>
           </>
         ) : (
           <button className="cart-btn full-width">
-            <img src="/icons/cart.svg" alt="cart" className="cart-icon" />В
-            корзину
+            <img src="/icons/cart.svg" alt="" className="cart-icon" />
+            <span>До кошика</span>
           </button>
         )}
       </div>
